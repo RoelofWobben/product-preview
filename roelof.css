@@ -1,0 +1,133 @@
+:root {
+    --dark_cyan: hsl(158, 36%, 37%); 
+    --cream: hsl(30, 38%, 92%); 
+    --very_dark_blue: hsl(212, 21%, 14%); 
+    --dark_grayish_blue: hsl(228, 12%, 48%); 
+    --white: hsl(0, 0%, 100%); 
+}
+
+* {
+    margin: 0 ; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem; 
+}
+
+main {
+  width: 375px;
+  padding: 1.5rem;     
+}
+
+.image_top {
+    width: 320px; 
+    height: 240px; 
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text-area {
+    padding-top: 1rem; 
+    padding-left: 1.5rem;  
+}
+
+.perfume {
+    font-size: 1rem;
+    color: var(--dark_grayish_blue);
+    letter-spacing: 5px;  
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    margin : 15px 0px;
+    margin-right: 30px;  
+    
+}
+
+.text {
+    color: var(--dark_grayish_blue);
+    margin-right: 35px;
+    margin-bottom:15px;  
+}
+
+.price {
+    position: relative;
+    margin-bottom: 30px; 
+}
+
+.new_price {
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: var(--dark_cyan);
+    font-weight: 700;   
+}
+
+.old-price {
+    color: var(--dark_grayish_blue);
+    position: absolute; 
+    top: 10px;
+    left: 150px;
+    text-decoration: line-through ;  
+      
+}
+
+.btn {
+    background-color: hsl(158, 91%, 26%);
+    border: none; 
+    color: white; 
+    padding: 16px 80px; 
+    font-size: 16px;
+    font-weight: 600;  
+    cursor: pointer;
+    border-radius: 10px;   
+}
+
+.btn img {
+    margin-right: 10px; 
+}
+
+.btn:hover {
+    background-color: var(--dark_cyan);
+}
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        width: 700px; 
+        display: flex;
+    }
+
+    .image_top {
+        width: 320px; 
+        height: 456px; 
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+    
+    h1 {
+        margin-right: 20px; 
+    }
+
+    .text {
+        margin-right: 4px;
+    }
+
+    .text-area {
+       display: flex; 
+       flex-direction: column;
+       width: 456px;
+       justify-content: center;   
+    }
+
+    
+}
